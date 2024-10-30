@@ -1,7 +1,6 @@
 import { useState } from "react";
 import CardTitle from "../CardTitle";
 import Button from "../Button";
-import Image from "next/image";
 
 export default function ProductCard(props) {
 
@@ -20,11 +19,11 @@ export default function ProductCard(props) {
 
                 {/* Image and overlays */}
                 <div className="image-container relative rounded-lg mb-3">
-                    <Image className="min-w-full h-72 rounded mb-4 brightness-[0.9] group-hover:brightness-[1.05] duration-200 object-cover" src={props.imageURL} alt="" />
+                    <img className="min-w-full h-72 rounded mb-4 brightness-[0.9] group-hover:brightness-[1.05] duration-200 object-cover" src={props.imageURL} alt="" />
                     {props.badge && (
                         <div className="badge absolute rounded-full top-3 left-3 px-3 py-1 bg-white text-xs font-medium">{props.badge}</div>
                     )}
-                    <Image
+                    <img
                         className={`absolute top-3 right-3 h-9 p-2 bg-white rounded-full duration-200 ${saturated ? 'saturate-100' : 'saturate-0'}`}
                         onClick={toggleSaturation}
                         src="./img/heart.webp"
@@ -38,7 +37,7 @@ export default function ProductCard(props) {
                 {props.rating && (
                     <div className="star-rating flex flex-row h-4 mb-3 items-center gap-1">
                         <p className="text-lg font-black">{props.rating}</p>
-                        <Image
+                        <img
                             className="h-5 w-5"
                             src="./img/rating-star.webp"
 
