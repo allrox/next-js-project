@@ -1,101 +1,164 @@
-import Image from "next/image";
+'use client'
+
+import ProductCard from './Components/ProductCard';
+import ContentCard from './Components/ContentCard';
+
+const productListData = [
+  {
+    imageURL: "./img/sample-image.webp",
+    badge: "Summer Sale",
+    title: "This product short description intentionally exceeds its container size to show the automatic line break behavior",
+    rating: "4.5",
+    alt: "Imagem do produto",
+    oldPrice: "100",
+    price: "49,90",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    icon: "bi bi-fire",
+    cta: "50% Off!"
+  },
+  {
+    imageURL: "./img/mockup-2.webp",
+    badge: "New formulation!",
+    title: "This product short description intentionally exceeds its container size to show the automatic line break behavior",
+    rating: "4.5",
+    icon: "bi bi-basket2-fill",
+    alt: "Imagem do produto",
+    price: "129,90",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    cta: "Buy now!"
+  },
+  {
+    imageURL: "./img/mockup-1.webp",
+    title: "This product short description intentionally exceeds its container size to show the automatic line break behavior",
+    alt: "Imagem do produto",
+    oldPrice: "100",
+    price: "50",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    icon: "bi bi-fire",
+    cta: "50% Off!"
+  },
+  {
+    imageURL: "./img/mockup-4.webp",
+    title: "This product short description intentionally exceeds its container size to show the automatic line break behavior",
+    rating: "4.5",
+    alt: "Imagem do produto",
+    price: "399,90",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    cta: "Buy now!"
+  },
+  {
+    imageURL: "./img/mockup-3.webp",
+    badge: "Best anti-aging effect",
+    title: "This product short description intentionally exceeds its container size to show the automatic line break behavior",
+    rating: "4.5",
+    alt: "Imagem do produto",
+    oldPrice: "130",
+    price: "89,90",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    icon: "bi bi-fire",
+    cta: "30% Off!"
+  },
+  {
+    imageURL: "./img/mockup-6.webp",
+    badge: "Complete skincare",
+    title: "This product short description intentionally exceeds its container size to show the automatic line break behavior",
+    rating: "4.5",
+    alt: "Imagem do produto",
+    oldPrice: "800",
+    price: "689,90",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    cta: "Buy now!"
+  },
+]
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <body>
+      <header>
+
+        <div className="w-screen bg-sky-900 py-12 px-10 bg-[url('../public/img/bg-texture.webp')] bg-auto">
+          <h1 className="text-white font-medium text-3xl text-center uppercase tracking-tight">
+            Just a React + Tailwind CSS Lab!
+          </h1>
         </div>
+
+        <div className="mx-2 mt-8 p-6 container mx-auto">
+          <p className="text-xl text-center">Understanding how things runs under <span className="font-bold">React with Tailwind</span>.</p>
+          <p className="py-4 text-center">This project aims something quite simple, I wanna understand how to set up properly the development environment with tools and frameworks. After that, I'll be able to work on evolving all the logical aspect and project visuals maybe adding some new sample blocks over the time as I try to enjoy the ride.</p>
+        </div>
+
+      </header>
+
+      <main className="px-6">
+        <section className="container grid grid-cols md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-8 mx-auto mb-16">
+
+          {
+            productListData.map(function (item, index) {
+              return (
+                <ProductCard
+                  key={index}
+                  imageURL={item.imageURL}
+                  alt={item.alt}
+                  badge={item.badge}
+                  title={item.title}
+                  rating={item.rating}
+                  description={item.description}
+                  oldPrice={item.oldPrice}
+                  price={item.price}
+                  icon={item.icon}
+                  cta={item.cta}
+                />
+              )
+            })
+          }
+        </section>
+
+        <section>
+          <section id="lorem-ipsum" class="container lg mx-auto mt-14 mb-10">
+            <div>
+              <h2 class="text-4xl text-center uppercase mt-16 mb-10 font-semibold">Here's another section!</h2>
+            </div>
+            <div class="flex flex-col lg:flex-row lg:mx-auto lg:space-x-8 lg:space-y-0 gap-5">
+              <div>
+                <h3>Some title</h3>
+                <p class="excerpt-lg"><span class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+              </div>
+
+              <div>
+                <h3>Some title</h3>
+                <p class="excerpt-lg"><span class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+              </div>
+
+              <div>
+                <h3>Some title</h3>
+                <p class="excerpt-lg"><span class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section id="content" class="">
+          <div class="container grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto pt-8 pb-24">
+            <ContentCard src="./img/sample-image.webp" title="This is the content title">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </ContentCard>
+            <ContentCard src="./img/sample-image.webp" title="This is the content title">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </ContentCard>
+            <ContentCard src="./img/sample-image.webp" title="This is the content title">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </ContentCard>
+          </div>
+        </section>
+
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer class="w-screen bg-sky-900 py-11 px-10 bg-[url('/src/img/bg-texture.webp')]  bg-auto">
+        <p class="text-center text-white text-lg">@AllRox. Thanks for watching!</p>
       </footer>
-    </div>
+
+    </body>
+
   );
 }
