@@ -1,10 +1,11 @@
 import './ContentCard.css'
+import Image from 'next/image'
 
 export default function ContentCard(props) {
     return (
         <div className="content-card p-4 pb-6 bg-white rounded-md shadow-sm md:hover:shadow-xl group">
             <div className="content-card-image mb-4 relative brightness-[0.9] group-hover:brightness-[1.05] duration-200">
-                <img className="card-image rounded-md" src={props.src} alt={props.alt} />
+                <Image className="card-image rounded-md" src={props.src} alt={props.alt} />
                 <p className="content-title absolute bottom-10 w-full text-center text-xl font-medium text-white line-clamp-2 uppercase">{props.title}</p>
             </div>
             <div>

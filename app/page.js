@@ -85,7 +85,7 @@ export default function Home() {
 
         <div className="mx-2 mt-8 p-6 container mx-auto">
           <p className="text-xl text-center">Understanding how things runs under <span className="font-bold">React with Tailwind</span>.</p>
-          <p className="py-4 text-center">This project aims something quite simple, I wanna understand how to set up properly the development environment with tools and frameworks. After that, I'll be able to work on evolving all the logical aspect and project visuals maybe adding some new sample blocks over the time as I try to enjoy the ride.</p>
+          <p className="py-4 text-center">This project aims something quite simple, I wanna understand how to set up properly the development environment with tools and frameworks. After that, I`&aposll be able to work on evolving all the logical aspect and project visuals maybe adding some new sample blocks over the time as I try to enjoy the ride.</p>
         </div>
 
       </header>
@@ -117,22 +117,22 @@ export default function Home() {
         <section>
           <section id="lorem-ipsum" class="container lg mx-auto mt-14 mb-10">
             <div>
-              <h2 class="text-4xl text-center uppercase mt-16 mb-10 font-semibold">Here's another section!</h2>
+              <h2 class="text-4xl text-center uppercase mt-16 mb-10 font-semibold">Here`&aposs another section!</h2>
             </div>
             <div class="flex flex-col lg:flex-row lg:mx-auto lg:space-x-8 lg:space-y-0 gap-5">
               <div>
                 <h3>Some title</h3>
-                <p class="excerpt-lg"><span class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                <p class="excerpt-lg"><span class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> Lorem Ipsum has been the industry`&aposs standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
               </div>
 
               <div>
                 <h3>Some title</h3>
-                <p class="excerpt-lg"><span class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                <p class="excerpt-lg"><span class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> Lorem Ipsum has been the industry`&aposs standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
               </div>
 
               <div>
                 <h3>Some title</h3>
-                <p class="excerpt-lg"><span class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                <p class="excerpt-lg"><span class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> Lorem Ipsum has been the industry`&aposs standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
               </div>
             </div>
           </section>
@@ -141,13 +141,13 @@ export default function Home() {
         <section id="content" class="">
           <div class="container grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto pt-8 pb-24">
             <ContentCard src="./img/sample-image.webp" title="This is the content title">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`&aposs standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
             </ContentCard>
             <ContentCard src="./img/sample-image.webp" title="This is the content title">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`&aposs standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
             </ContentCard>
             <ContentCard src="./img/sample-image.webp" title="This is the content title">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`&aposs standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
             </ContentCard>
           </div>
         </section>
